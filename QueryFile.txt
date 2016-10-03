@@ -1,0 +1,3 @@
+SELECT count(*)
+FROM F1 r, F2 s, F3 t, F4 v, F5 w
+WHERE r.salary < s.salary AND r.tax < s.tax

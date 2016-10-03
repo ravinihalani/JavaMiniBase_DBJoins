@@ -1,0 +1,5 @@
+east_1 west_1
+east west
+east_3 1 west_3 
+AND 
+east_4 1 west_4

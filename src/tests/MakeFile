@@ -1,0 +1,22 @@
+JDKPATH = /usr/lib/jvm/jdk1.8.0_71
+LIBPATH = .:..
+CLASSPATH = $(LIBPATH)
+BINPATH = $(JDKPATH)/bin
+JAVAC = $(JDKPATH)/bin/javac -classpath $(CLASSPATH)
+JAVA  = $(JDKPATH)/bin/java  -classpath $(CLASSPATH)
+
+# test buffer manager
+
+
+#BMTest:BMTest.java
+#	$(JAVAC) TestDriver.java BMTest.java
+
+#bmtest: BMTest
+#	$(JAVA) tests.BMTest
+
+JoinTest:JoinTest_1a_1b.java
+	$(JAVAC) TestDriver.java JoinTest_1a_1b.java
+
+jointest: JoinTest_1a_1b
+	$(JAVA) tests.JoinTest_1a_1b
+
